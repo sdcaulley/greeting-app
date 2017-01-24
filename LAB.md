@@ -1,7 +1,4 @@
-<span>
-  <img src="https://cloud.githubusercontent.com/assets/478864/22186847/68223ce6-e0b1-11e6-8a62-0e3edc96725e.png" width=30>
-  Greeting App
-</span>
+<img src="https://cloud.githubusercontent.com/assets/478864/22186847/68223ce6-e0b1-11e6-8a62-0e3edc96725e.png" width=30> Greeting App
 ===
 
 You've just inherited the fledgling `greeting-app` product. 
