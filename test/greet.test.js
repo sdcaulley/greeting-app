@@ -4,31 +4,42 @@ var run = require('./run.js');
 
 describe('greeting app', function() {
     it('greets by name', function() {
-        var output = run(['./lib/greet.js', 'marty', '--plain']);
-        assert.equal(output, 'Hello, marty!\n');
+        var output = run(['cli.js', '--name:marty', '--plain']);
+        assert.equal(output, 'Greetings, marty!\n');
     });
 
     it('uses "stranger" as a default when no name provided', function() {
-        var output = run(['./lib/greet.js', '--plain']);
-        assert.equal(output, 'Hello, stranger!\n');
+        var output = run(['cli.js', '--plain']);
+        assert.equal(output, 'Greetings, Stranger!\n');
     });
 
     it('greets user with cow and name', function() {
-        var output = run(['./lib/greet.js', 'marty']);
-        assert.equal(output, cowsay.say({
-            text: 'Hello, marty!',
-            e: 'oO',
-            T: 'U'
-        }));
-    });
-
-    it('greets a user with no name and a cow', function() {
-        var output = run(['./lib/greet.js']);
+        var output = run(['cli.js', '--name:marty']);
         var response = cowsay.say({
-            text: 'Hello, stranger!',
+            text: 'Greetings, marty!',
             e: 'oO',
             T: 'U'
         });
-        assert.equal(output, response);
+        assert.equal(output, response + '\n');
+    });
+
+    it('greets a user with no name and a cow', function() {
+        var output = run(['cli.js']);
+        var response = cowsay.say({
+            text: 'Greetings, Stranger!',
+            e: 'oO',
+            T: 'U'
+        });
+        assert.equal(output, response + '\n');
+    });
+
+    it('uses user provided greeting', function() {
+        var output = run(['cli.js', '--name:Marty', '--greeting:hola', '--plain']);
+        assert.equal(output, 'hola, Marty!\n');
+    });
+
+    it('uses a default greeting when none is provided', function() {
+        var output = run(['cli.js', '--plain', '--name:Marty']);
+        assert.equal(output, 'Greetings, Marty!\n');
     });
 });

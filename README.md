@@ -1,22 +1,11 @@
 # README
 
 ## Usage
-At a command prompt, enter the following command
+This is a light weight command line application that greets a user.  A user can specify their name, a greeting and whether they want
+the response in plain text.
 ```
-$ node lib/greet.js --plain
-hello stranger
-
-$ node lib/greet.js john --plain
-hello john 
-
-```
-If you wish to see a cow saying your greeting, enter the following command
-```
-$ node lib/greet.js
-hello stranger
-
-$ node lib/greet.js john
-hello john 
+$ node cli.js --name:stephanie --greeting:hi --plain
+hi, stephanie!
 
 ```
 
