@@ -1,16 +1,14 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
-### Added
+## v1.1.1 - Week 3
+* Added cli.js as main program file
+* Moved main functionality to module
 
-### Changed
+## v1.1.0 - Week 2
+* Added a cow greeting the users
 
-### Fixed
-
-### Removed
-
-## v1.0.0 - 2017-01-25
+## v1.0.0 - Week 1
 * Added CHANGELOG.md and content
 * Added README.md
 * Added package.json

@@ -3,7 +3,16 @@
 ## Usage
 At a command prompt, enter the following command
 ```
-$ node lib/greet.js 
+$ node lib/greet.js --plain
+hello stranger
+
+$ node lib/greet.js john --plain
+hello john 
+
+```
+If you wish to see a cow saying your greeting, enter the following command
+```
+$ node lib/greet.js
 hello stranger
 
 $ node lib/greet.js john
