@@ -1,28 +1,31 @@
 {
-    "name": "greeting-app",
-    "version": "1.0.0",
-    "description": "a simple application to greet our users",
-    "main": "cli.js",
-    "directories": {
-        "test": "test"
-    },
-    "scripts": {
-        "test": "mocha",
-        "test:watch": "mocha -w",
-        "lint": "eslint ."
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/sdcaulley/greeting-app.git"
-    },
-    "author": "sdcaulley",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/sdcaulley/greeting-app/issues"
-    },
-    "homepage": "https://github.com/sdcaulley/greeting-app#readme",
-    "devDependencies": {
-        "eslint": "^3.14.0",
-        "mocha": "^3.2.0"
-    }
+  "name": "greeting-app",
+  "version": "1.0.0",
+  "description": "a simple application to greet our users",
+  "main": "cli.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "test:watch": "mocha -w",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdcaulley/greeting-app.git"
+  },
+  "author": "sdcaulley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdcaulley/greeting-app/issues"
+  },
+  "homepage": "https://github.com/sdcaulley/greeting-app#readme",
+  "devDependencies": {
+    "eslint": "^3.14.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "cowsay": "^1.1.9"
+  }
 }
