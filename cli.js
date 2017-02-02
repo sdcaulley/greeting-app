@@ -1,3 +1,5 @@
 var greetUser = require('./lib/greet.js');
 
-greetUser(process.argv);
+greetUser();
+
+module.exports = { greetUser };
